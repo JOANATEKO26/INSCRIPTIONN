@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="825.0" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ism.inscription.controllers.ConnexionController">
+   <children>
+      <BorderPane prefHeight="567.0" prefWidth="200.0">
+         <left>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" BorderPane.alignment="CENTER" />
+         </left>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" stylesheets="@../style/style.css" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+      <Text layoutX="298.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Formulaire de Connexion">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtlogin" layoutX="285.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <TextField layoutX="285.0" layoutY="274.0" prefHeight="44.0" prefWidth="510.0" />
+      <Text layoutX="285.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="password">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtpssd" layoutX="279.0" layoutY="400.0" prefHeight="44.0" prefWidth="500.0" />
+      <Button layoutX="251.0" layoutY="488.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="128.0" style="-fx-background-color: orange;" text="Annuler" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="641.0" layoutY="488.0" mnemonicParsing="false" onAction="#handleConnexion" prefHeight="46.0" prefWidth="138.0" style="-fx-background-color: orange;" stylesheets="@../style/style.css" text="Connexion" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Text fx:id="lblerror" fill="RED" layoutX="287.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login ou Password incorrect">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

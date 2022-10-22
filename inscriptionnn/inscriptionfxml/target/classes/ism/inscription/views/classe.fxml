@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="646.0" prefWidth="861.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ism.inscription.controllers.ClasseController">
+   <children>
+      <BorderPane prefHeight="96.0" prefWidth="862.0">
+         <top>
+            <AnchorPane prefHeight="153.0" prefWidth="862.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text layoutX="50.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Niveau">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <TextField layoutX="41.0" layoutY="49.0" />
+                  <Text layoutX="315.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filiere">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <TextField layoutX="290.0" layoutY="49.0" />
+                  <Button layoutX="537.0" layoutY="37.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="126.0" text="Enregistrer">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Button>
+                  <AnchorPane fx:id="tblclasse" layoutY="134.0" prefHeight="48.0" prefWidth="862.0" style="-fx-background-color: orange;">
+                     <children>
+                        <Text fx:id="tblid" fill="WHITE" layoutX="66.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="tblniveau" fill="WHITE" layoutX="259.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Niveau">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="tblfiliere" fill="WHITE" layoutX="465.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filiere">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="tbllibelle" fill="WHITE" layoutX="685.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Libelle">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
